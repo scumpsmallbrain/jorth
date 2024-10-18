@@ -65,6 +65,7 @@ public class Jorth {
 		dictionary.put("/", new Word.BinaryOp("/", (a, b) -> a / b));
 		dictionary.put("%", new Word.BinaryOp("%", (a, b) -> a % b));
 		dictionary.put("|", new Word.BinaryOp("|", (a, b) -> a | b));
+		dictionary.put("&", new Word.BinaryOp("&", (a, b) -> a & b));
 
 		/* print function */
 		dictionary.put(".", new Word.StackManipulator
